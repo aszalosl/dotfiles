@@ -1,1 +1,13 @@
-/home/laci/bin/zn
+#!/usr/bin/env bash
+
+# zn - as zettell
+# new export variables EDITOR for your editor and 
+#+ NOTES for your notes folder.
+
+main () {
+    NOTES=$HOME/Dokumentumok/Zettel/
+    note_id=$(date +'%Y%m%d%H%M%S')
+    vim $NOTES/"$note_id".md
+}
+
+main
